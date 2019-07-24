@@ -1,0 +1,28 @@
+@backgroundBody : #352f5b;
+@backgroundList : #423a6f;
+@backgroundTodo : rgba(0, 0, 0, 0.2);
+@widthList : 400px;
+
+body {
+    background-color: @backgroundBody;
+}
+
+input[type=text],
+input[type=text]:focus {
+    color: white;
+    border: none;
+    background-color: @backgroundTodo;
+    max-width: @widthList;
+}
+
+.todos {
+    max-width: @widthList;
+
+    li {
+        background-color: @backgroundList;
+
+        .delete {
+            cursor: pointer;
+        }
+    }
+}
