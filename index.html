@@ -4,14 +4,43 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="styles.css">
     <title>Cheva Todos</title>
 </head>
 
 <body>
+    <div class="container">
+        <header class="text-center text-light my-4">
+            <h1 class="mb-4">Todos List</h1>
+            <form action="" class="search">
+                <input type="text" class="form-control m-auto" name="search" placeholder="Search">
+            </form>
+        </header>
 
+        <ul class="list-group todos mx-auto text-light">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Play game</span>
+                <i class="fas fa-trash delete"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Read book</span>
+                <i class="fas fa-trash delete"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Punch Monster</span>
+                <i class="fas fa-trash delete"></i>
+            </li>
+        </ul>
+
+        <form action="" class="add text-center my-4">
+            <label for="" class="text-light">Add new To do...</label>
+            <input type="text" class="form-control m-auto" name="add delete">
+        </form>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -23,6 +52,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="https://kit.fontawesome.com/b5715f9575.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
